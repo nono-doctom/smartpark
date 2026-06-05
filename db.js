@@ -3,11 +3,15 @@ const mysql = require("mysql2");
 const db = mysql.createPool({
   host: "localhost",
   user: "root",
-  password: "", // mets ton mdp mysql si tu en as un
-  database: "smartpark",
-  waitForConnections: true,
-  connectionLimit: 10,
-  queueLimit: 0
+  password: "",
+  database: "smartpark"
+  //host: "mysql-smartpark.alwaysdata.net",
+  //user: "smartpark",
+  //password: "Noémie13@!",
+  //database: "smartpark_db",
+  //waitForConnections: true,
+  //connectionLimit: 10,
+  //queueLimit: 0
 });
 
 // test connexion
